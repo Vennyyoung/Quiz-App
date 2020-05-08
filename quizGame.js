@@ -69,9 +69,6 @@ begin.style.display = "none";
 
 
 
-
-
-
 if(myquiz1()) { checkOption(e);
   
 }
@@ -163,7 +160,8 @@ function myquiz2() {
       document.getElementById("d").innerHTML = Object.values(questionBank[3])[0][3];
       
       next.addEventListener("click", myquiz5);
-    }/* function checkOption(e) {
+    }
+/* function checkOption(e) {
         if (e.target.id === Object.values(answers)[2]){
           e.target.style.backgroundColor = 'green'
         } else {
@@ -188,6 +186,7 @@ function myquiz2() {
       
       next.addEventListener("click", );
     }
+
 /* function checkOption(e) {
         if (e.target.id === Object.values(answers)[2]){
           e.target.style.backgroundColor = 'green'
