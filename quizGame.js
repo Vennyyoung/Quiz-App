@@ -23,6 +23,23 @@ const answers = {
   3: 'a',
   4: 'd' 
 }
+
+next = document.getElementById("but");
+const begin = document.getElementById("start");
+begin.addEventListener("click", myquiz1);
+const quest = document.getElementById("options");
+
+// start quiz
+
+begin.style.display = "none";
+// next.style.display = "none";
+//quest.style.display = "none"
+
+if(myquiz1()) { checkOption(e);
+  
+}
+
+
 console.log(Object.values(answers)[0])
 document.getElementById("p1").innerHTML = Object.keys(questionBank[0]).join();
 document.getElementById("a").innerHTML = Object.values(questionBank[0])[0][0];
@@ -38,6 +55,19 @@ document.getElementById("a").innerHTML = Object.values(questionBank[0])[0][0];
       e.target.style.backgroundColor = 'red'
       document.getElementById(Object.values(answers)[0]).style.backgroundColor = 'green'
     }
- }
+ next.addEventListener("click", myquiz2);
+  }
+
+
+function myquiz2() {
+  //console.log(Object.values(answers)[1])
+  begin.style.display = "none";
+  document.getElementById("p1").innerHTML = Object.keys(questionBank[1]).join();
+  document.getElementById("a").innerHTML = Object.values(questionBank[1])[0][0];
+  document.getElementById("b").innerHTML = Object.values(questionBank[1])[0][1];
+  document.getElementById("c").innerHTML = Object.values(questionBank[1])[0][2];
+  document.getElementById("d").innerHTML = Object.values(questionBank[1])[0][3];
+}
+
  
 
