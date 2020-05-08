@@ -23,7 +23,6 @@ const answers = {
   3: 'a',
   4: 'd' 
 }
-
 next = document.getElementById("but");
 const begin = document.getElementById("start");
 begin.addEventListener("click", myquiz1);
@@ -35,27 +34,42 @@ begin.style.display = "none";
 // next.style.display = "none";
 //quest.style.display = "none"
 
+// start quiz
+/*function runQuiz(){
+    start.style.display = "none";
+    renderQuestion();
+    quiz.style.display = "block";
+    rende
+    renderCounter();*/
+
+
 if(myquiz1()) { checkOption(e);
   
 }
+  
+/* myquiz2();{
+  checkOption(e);
+  next.addEventListener("click", myquiz3);
+}*/
 
-
-console.log(Object.values(answers)[0])
-document.getElementById("p1").innerHTML = Object.keys(questionBank[0]).join();
-document.getElementById("a").innerHTML = Object.values(questionBank[0])[0][0];
+function myquiz1() {
+  console.log(Object.values(answers)[0]);
+  //begin.style.display = "none"
+  document.getElementById("p1").innerHTML = Object.keys(questionBank[0]).join();
+  document.getElementById("a").innerHTML = Object.values(questionBank[0])[0][0];
   document.getElementById("b").innerHTML = Object.values(questionBank[0])[0][1];
   document.getElementById("c").innerHTML = Object.values(questionBank[0])[0][2];
   document.getElementById("d").innerHTML = Object.values(questionBank[0])[0][3];
-
-  function checkOption(e) {
-    if (e.target.id === Object.values(answers)[0]){
-      e.target.style.backgroundColor = 'green'
+}
+function checkOption(e) {
+    if (e.target.id == Object.values(answers)[0]) {
+      e.target.style.backgroundColor = "green";
     } else {
- 
-      e.target.style.backgroundColor = 'red'
-      document.getElementById(Object.values(answers)[0]).style.backgroundColor = 'green'
+      e.target.style.backgroundColor = "red";
+      document.getElementById(Object.values(answers)[0]).style.backgroundColor =
+        "green";
     }
- next.addEventListener("click", myquiz2);
+    next.addEventListener("click", myquiz2);
   }
 
 
@@ -68,6 +82,18 @@ function myquiz2() {
   document.getElementById("c").innerHTML = Object.values(questionBank[1])[0][2];
   document.getElementById("d").innerHTML = Object.values(questionBank[1])[0][3];
 }
+/*function checkOption(e) {
+  if (e.target.id === Object.values(answers)[1]) {
+    e.target.style.backgroundColor = "green";
+  } else {
+    e.target.style.backgroundColor = "red";
+    document.getElementById(Object.values(answers)[1]).style.backgroundColor =
+      "green";
+  }
+  next.addEventListener("click", myquiz3);
+}*/
+
+
 
  
 
