@@ -90,8 +90,82 @@ function myquiz2() {
     document.getElementById(Object.values(answers)[1]).style.backgroundColor =
       "green";
   }
-  next.addEventListener("click", myquiz3);
+  next.addEventListene function myquiz3(){
+    console.log(Object.values(answers)[2])
+    begin.style.display = "none"
+    document.getElementById("p1").innerHTML = Object.keys(questionBank[2]).join();
+    document.getElementById("a").innerHTML = Object.values(questionBank[2])[0][0];
+    document.getElementById("b").innerHTML = Object.values(questionBank[2])[0][1];
+    document.getElementById("c").innerHTML = Object.values(questionBank[2])[0][2];
+    document.getElementById("d").innerHTML = Object.values(questionBank[2])[0][3];
+    
+    next.addEventListener("click", myquiz4);
+  }
+    
+     /* function checkOption(e) {
+        if (e.target.id === Object.values(answers)[2]){
+          e.target.style.backgroundColor = 'green'
+        } else {
+     
+          e.target.style.backgroundColor = 'red'
+          document.getElementById(Object.values(answers)[2]).style.backgroundColor = 'green'
+        }
+        next.addEventListener("click",myquiz4)
+  
+     }*/
+r("click", myquiz3);
 }*/
+
+function myquiz4(){
+      console.log(Object.values(answers)[2])
+      begin.style.display = "none"
+      document.getElementById("p1").innerHTML = Object.keys(questionBank[3]).join();
+      document.getElementById("a").innerHTML = Object.values(questionBank[3])[0][0];
+      document.getElementById("b").innerHTML = Object.values(questionBank[3])[0][1];
+      document.getElementById("c").innerHTML = Object.values(questionBank[3])[0][2];
+      document.getElementById("d").innerHTML = Object.values(questionBank[3])[0][3];
+      
+      next.addEventListener("click", myquiz5);
+    }
+
+/* function checkOption(e) {
+        if (e.target.id === Object.values(answers)[2]){
+          e.target.style.backgroundColor = 'green'
+        } else {
+     
+          e.target.style.backgroundColor = 'red'
+          document.getElementById(Object.values(answers)[2]).style.backgroundColor = 'green'
+        }
+        next.addEventListener("click",myquiz4)
+  
+     }*/function myquiz5(){
+      console.log(Object.values(answers)[2])
+      begin.style.display = "none"
+      document.getElementById("p1").innerHTML = Object.keys(questionBank[4]).join();
+      document.getElementById("a").innerHTML = Object.values(questionBank[4])[0][0];
+      document.getElementById("b").innerHTML = Object.values(questionBank[4])[0][1];
+      document.getElementById("c").innerHTML = Object.values(questionBank[4])[0][2];
+      document.getElementById("d").innerHTML = Object.values(questionBank[4])[0][3];
+      
+      next.addEventListener("click", );
+    }
+
+/* function checkOption(e) {
+        if (e.target.id === Object.values(answers)[2]){
+          e.target.style.backgroundColor = 'green'
+        } else {
+     
+          e.target.style.backgroundColor = 'red'
+          document.getElementById(Object.values(answers)[2]).style.backgroundColor = 'green'
+        }
+        next.addEventListener("click",myquiz4)
+  
+     }*/
+
+
+
+
+
 
 
 
