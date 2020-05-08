@@ -90,8 +90,11 @@ function myquiz2() {
     document.getElementById(Object.values(answers)[1]).style.backgroundColor =
       "green";
   }
-  next.addEventListene function myquiz3(){
-    console.log(Object.values(answers)[2])
+  next.addEventListene function myquiz3()
+  }*/
+  
+ function myquiz3() {
+   // console.log(Object.values(answers)[2])
     begin.style.display = "none"
     document.getElementById("p1").innerHTML = Object.keys(questionBank[2]).join();
     document.getElementById("a").innerHTML = Object.values(questionBank[2])[0][0];
@@ -111,10 +114,7 @@ function myquiz2() {
           document.getElementById(Object.values(answers)[2]).style.backgroundColor = 'green'
         }
         next.addEventListener("click",myquiz4)
-  
-     }*/
-r("click", myquiz3);
-}*/
+  }*/
 
 function myquiz4(){
       console.log(Object.values(answers)[2])
