@@ -143,10 +143,12 @@ function myquiz2() {
     
      /* function checkOption(e) {
         if (e.target.id === Object.values(answers)[2]){
-          e.target.style.backgroundColor = 'green'
+          e.target.style.backgroundColor = 'green';
+          e.target.style.color = "white";
         } else {
      
           e.target.style.backgroundColor = 'red'
+          e.target.style.color = "white";
           document.getElementById(Object.values(answers)[2]).style.backgroundColor = 'green'
         }
         next.addEventListener("click",myquiz4)
